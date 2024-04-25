@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  font: inherit;
+}
+
+.title {
+  font-size: 2em;
+  color: #a21caf;
+  margin: 30px;
+}
+
+.description {
+  font-size: 1.2em;
+  color: #a21caf;
+  margin: 30px;
+}
+
+.creator {
+  font-size: 1em;
+  color: #8b008b;
+  margin: 70px;
+}

@@ -1,0 +1,50 @@
+.auth-form {
+  max-width: 600px;
+  margin-inline: 30%;
+  margin-block: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 20px;
+  width: 80%;
+  padding: 10px;
+  border: 2px solid #e6e6fa;
+  border-radius: 10px;
+  font: inherit;
+  color: #663399;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  width: 30%;
+  color: white;
+  margin-top: 15px;
+  padding: 10px;
+  font: inherit;
+  font-weight: 600;
+}
+
+.login-btn {
+  background-color: #800080;
+}
+
+.login-txt {
+  color: #800080;
+}
+
+.signup-btn {
+  background-color: #4b0082;
+}
+
+.signup-txt {
+  color: #4b0082;
+}
+
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}

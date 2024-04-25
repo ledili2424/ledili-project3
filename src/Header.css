@@ -1,0 +1,52 @@
+header {
+  padding: 10px;
+  padding-inline: 60px;
+  margin: 30px;
+  font-weight: bold;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #8b008b;
+}
+
+.auth-div {
+  margin-right: -30px;
+  margin: 5px;
+}
+
+.auth-div .nav-link {
+  margin-left: 20px;
+  padding: 7px;
+  border: 3px solid #8b008b;
+  border-radius: 6px;
+}
+
+.nav-link:hover {
+  color: #e6e6fa;
+  border: #e6e6fa;
+}
+
+.username {
+  margin-right: 20px;
+  padding: 7px;
+  text-decoration: none;
+  color: #8b008b;
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    padding-inline: 10px;
+  }
+
+  .nav-link,
+  .username {
+    font-size: 0.8em;
+  }
+}
