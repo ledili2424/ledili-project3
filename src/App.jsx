@@ -5,8 +5,6 @@ import Signup from "./Pages/Signup";
 import Layout from "./Layout";
 import Home from "./Pages/Home";
 
-import "./App.css";
-
 function App() {
   return (
     <Routes>
