@@ -22,13 +22,10 @@ export default function Signup() {
         {
           username,
           password,
-        },
-        {
-          withCredentials: true,
         }
       );
       console.log("User sign up successfully!");
-      navigate("/manager");
+      navigate("/login");
     } catch (err) {
       console.log("Error sign up", err);
       if (err.response) {
