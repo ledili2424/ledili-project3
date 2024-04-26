@@ -2,7 +2,7 @@ import axios from "axios";
 
 function DeleteButton({ id, refreshPasswordList }) {
   async function handleDelete() {
-    await axios.delete(`/api/password/${id}`, {
+    await axios.delete(`https://psw-backend.onrender.com/api/password/${id}`, {
       withCredentials: true,
     });
     refreshPasswordList(id);

@@ -11,7 +11,7 @@ export default function Header() {
 
   useEffect(() => {
     axios
-      .get("/api/auth/profile", {
+      .get("https://psw-backend.onrender.com/api/auth/profile", {
         withCredentials: true,
       })
       .then((res) => {
@@ -24,7 +24,7 @@ export default function Header() {
   function handleLogout() {
     axios
       .post(
-        "/api/auth/logout",
+        "https://psw-backend.onrender.com/api/auth/logout",
         {},
         {
           withCredentials: true,

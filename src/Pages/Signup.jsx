@@ -18,7 +18,7 @@ export default function Signup() {
 
     try {
       await axios.post(
-        "/api/auth/signup",
+        "https://psw-backend.onrender.com/api/auth/signup",
         { username, password },
         {
           headers: {

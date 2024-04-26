@@ -10,7 +10,7 @@ export default function SharePasswordForm({sharedPasswordList, setSharedPassword
   useEffect(() => {
     const getSharedPassword = async () => {
       try {
-        const res = await axios.get("/api/password/shared", {
+        const res = await axios.get("https://psw-backend.onrender.com/api/password/shared", {
           withCredentials: true,
         });
         console.log("Get shared passwords response data:", res.data);
@@ -29,7 +29,7 @@ export default function SharePasswordForm({sharedPasswordList, setSharedPassword
     } else {
       axios
         .post(
-          "/api/password/share-request",
+          "https://psw-backend.onrender.com/api/password/share-request",
           { receiverName, url },
           {
             withCredentials: true,

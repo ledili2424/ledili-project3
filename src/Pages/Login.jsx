@@ -21,7 +21,7 @@ export default function Login() {
 
     try {
       const response = await axios.post(
-        "/api/auth/login",
+        "https://psw-backend.onrender.com/api/auth/login",
         { username, password },
         {
           headers: {
