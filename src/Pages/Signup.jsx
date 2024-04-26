@@ -28,7 +28,7 @@ export default function Signup() {
         }
       );
       console.log("User sign up successfully!");
-      navigate("/login");
+      navigate("/manager");
     } catch (err) {
       console.log("Error sign up", err);
       if (err.response) {
