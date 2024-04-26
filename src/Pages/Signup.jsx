@@ -17,12 +17,18 @@ export default function Signup() {
     }
 
     try {
-      await axios.post("https://api.ledi-password-manager.com/api/auth/signup", {
-        username,
-        password,
-      });
+      await axios.post(
+        "https://api.ledi-password-manager.com/api/auth/signup",
+        {
+          username,
+          password,
+        },
+        {
+          withCredentials: true,
+        }
+      );
       console.log("User sign up successfully!");
-      navigate("/manager");
+      navigate("/login");
     } catch (err) {
       console.log("Error sign up", err);
       if (err.response) {
