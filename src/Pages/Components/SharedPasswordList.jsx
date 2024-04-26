@@ -7,13 +7,16 @@ export default function SharedPasswordList({ sharedPasswordInfos }) {
         <h4 className="password-title">Password Owner</h4>
       </div>
       {sharedPasswordInfos &&
-        sharedPasswordInfos.map((info) => (info && 
-          <div key={info._id} className="shared-password-item">
-            <p className="password-content">{info.senderName}</p>
-            <p className="password-content url-content">{info.url}</p>
-            <p className="password-content">{info.password}</p>
-          </div>
-        ))}
+        sharedPasswordInfos.map(
+          (info) =>
+            info && (
+              <div key={info.requestId} className="shared-password-item">
+                <p className="password-content">{info.url}</p>
+                <p className="password-content">{info.password}</p>
+                <p className="password-content">{info.senderName}</p>
+              </div>
+            )
+        )}
     </div>
   );
 }
