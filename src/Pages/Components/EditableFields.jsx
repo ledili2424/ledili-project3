@@ -11,7 +11,7 @@ function EditableField({ initialValue, id, field }) {
 
     if (value.trim() !== "") {
       const res = await axios.put(
-        `https://psw-backend.onrender.com/api/password/${id}`,
+        `https:/api.ledi-password-manager.com/api/password/${id}`,
         { [field]: value },
         {
           withCredentials: true,

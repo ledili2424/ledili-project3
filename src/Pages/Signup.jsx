@@ -17,15 +17,10 @@ export default function Signup() {
     }
 
     try {
-      await axios.post(
-        "https://psw-backend.onrender.com/api/auth/signup",
-        { username, password },
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
+      await axios.post("https:/api.ledi-password-manager.com/api/auth/signup", {
+        username,
+        password,
+      });
       console.log("User sign up successfully!");
       navigate("/manager");
     } catch (err) {
