@@ -2,7 +2,7 @@ import axios from "axios";
 
 function DeleteButton({ id, refreshPasswordList }) {
   async function handleDelete() {
-    await axios.delete(`https:/api.ledi-password-manager.com/api/password/${id}`, {
+    await axios.delete(`https://api.ledi-password-manager.com/api/password/${id}`, {
       withCredentials: true,
     });
     refreshPasswordList(id);

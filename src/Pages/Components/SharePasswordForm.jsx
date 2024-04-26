@@ -10,7 +10,7 @@ export default function SharePasswordForm({sharedPasswordList, setSharedPassword
   useEffect(() => {
     const getSharedPassword = async () => {
       try {
-        const res = await axios.get("https:/api.ledi-password-manager.com/api/password/shared", {
+        const res = await axios.get("https://api.ledi-password-manager.com/api/password/shared", {
           withCredentials: true,
         });
         console.log("Get shared passwords response data:", res.data);
@@ -29,7 +29,7 @@ export default function SharePasswordForm({sharedPasswordList, setSharedPassword
     } else {
       axios
         .post(
-          "https:/api.ledi-password-manager.com/api/password/share-request",
+          "https://api.ledi-password-manager.com/api/password/share-request",
           { receiverName, url },
           {
             withCredentials: true,

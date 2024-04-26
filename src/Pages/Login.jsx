@@ -21,7 +21,7 @@ export default function Login() {
 
     try {
       const response = await axios.post(
-        "https:/api.ledi-password-manager.com/api/auth/login",
+        "https://api.ledi-password-manager.com/api/auth/login",
         { username, password },
         {
           withCredentials: true,

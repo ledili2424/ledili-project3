@@ -11,7 +11,7 @@ export default function Header() {
 
   useEffect(() => {
     axios
-      .get("https:/api.ledi-password-manager.com/api/auth/profile", {
+      .get("https://api.ledi-password-manager.com/api/auth/profile", {
         withCredentials: true,
       })
       .then((res) => {
@@ -24,7 +24,7 @@ export default function Header() {
   function handleLogout() {
     axios
       .post(
-        "https:/api.ledi-password-manager.com/api/auth/logout",
+        "https://api.ledi-password-manager.com/api/auth/logout",
         {},
         {
           withCredentials: true,

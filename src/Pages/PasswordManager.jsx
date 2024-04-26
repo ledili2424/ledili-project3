@@ -20,7 +20,7 @@ export default function PasswordManager() {
 
   useEffect(() => {
     axios
-      .get("https:/api.ledi-password-manager.com/api/password", { withCredentials: true })
+      .get("https://api.ledi-password-manager.com/api/password", { withCredentials: true })
       .then((res) => {
         console.log("Get passwords response data:", res.data);
         setPasswordList(res.data);
@@ -91,7 +91,7 @@ export default function PasswordManager() {
   function addPassword(password) {
     axios
       .post(
-        "https:/api.ledi-password-manager.com/api/password",
+        "https://api.ledi-password-manager.com/api/password",
         { url, password },
         {
           withCredentials: true,

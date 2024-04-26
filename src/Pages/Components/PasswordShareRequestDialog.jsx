@@ -46,7 +46,7 @@ function PasswordShareRequestDialog({ setSharedPasswordList }) {
 
   useEffect(() => {
     axios
-      .get("https:/api.ledi-password-manager.com/api/password/pending-requests", {
+      .get("https://api.ledi-password-manager.com/api/password/pending-requests", {
         withCredentials: true,
       })
       .then((res) => {
@@ -65,7 +65,7 @@ function PasswordShareRequestDialog({ setSharedPasswordList }) {
     console.log(requestId);
     axios
       .put(
-        `https:/api.ledi-password-manager.com/api/password/share-request/${requestId}`,
+        `https://api.ledi-password-manager.com/api/password/share-request/${requestId}`,
         { status: "accepted" },
         { withCredentials: true }
       )
@@ -86,7 +86,7 @@ function PasswordShareRequestDialog({ setSharedPasswordList }) {
   function handleReject(requestId) {
     axios
       .put(
-        `https:/api.ledi-password-manager.com/api/password/share-request/${requestId}`,
+        `https://api.ledi-password-manager.com/api/password/share-request/${requestId}`,
         { status: "rejected" },
         { withCredentials: true }
       )

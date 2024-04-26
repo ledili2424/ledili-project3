@@ -17,7 +17,7 @@ export default function Signup() {
     }
 
     try {
-      await axios.post("https:/api.ledi-password-manager.com/api/auth/signup", {
+      await axios.post("https://api.ledi-password-manager.com/api/auth/signup", {
         username,
         password,
       });
